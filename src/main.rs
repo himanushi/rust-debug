@@ -7,6 +7,6 @@ async fn main() -> Result<(), reqwest::Error> {
         .text()
         .await?;
 
-    println!("body = {body:?}");
+    println!("{body}");
     Ok(())
 }
